@@ -38,7 +38,7 @@ model = dict(
         fc_out_channels=1024,
         roi_feat_size=7,
         # num_classes=3,
-        num_classes=2,
+        num_classes=3,
         target_means=[0., 0., 0., 0.],
         target_stds=[0.1, 0.1, 0.2, 0.2],
         reg_class_agnostic=False,
@@ -100,7 +100,7 @@ test_cfg = dict(
 )
 # dataset settings
 dataset_type = 'MyDataset'
-data_root = '/content/BloodCell/'
+data_root = '/content/VOC2007/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [
